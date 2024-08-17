@@ -1,3 +1,5 @@
+
+![zksnake-banner](https://github.com/user-attachments/assets/cfd055e0-804e-4755-8c21-53fa75f7d985)
 # zkSnake
 
 zkSnake is a snake game that is verifiable using zk proofs. We employed Risc0 Bonsai to produce proofs of our rust application.  
