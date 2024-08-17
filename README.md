@@ -14,11 +14,6 @@ It provides a starting point for building powerful new applications on Ethereum 
 *For a 60 second overview of how this template and off-chain computation with Bonsai work, [check out the video here](https://www.youtube.com/watch?v=WDS8X8H9mIk).*
 
 ## Overview
-
-The picture below shows a simplified overview of how users can integrate Bonsai into their Ethereum smart contracts:
-
-![Bonsai Relay Diagram](images/BonsaiRelay.png)
-
 1. Users can delegate their smart contract's logic to Bonsai. The [Bonsai Relay Contract](lib/risc0/bonsai/ethereum/contracts/relay/BonsaiRelay.sol) provides a `Request Callback` interface. This interface, accessible both *off-chain* (through HTTP REST API) and *on-chain*, emits an event detected by the `Ethereum Bonsai Relayer`.
 2. The `Ethereum Bonsai Relayer` sends the proof request to Bonsai.
 3. Bonsai generates a Snark proof and its result, encapsulated in a journal.
